@@ -1,17 +1,15 @@
 package kr.pe.jonghak.demo.hello.api;
 
+import java.util.Arrays;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import kr.pe.jonghak.demo.hello.api.exception.DesignedException;
 import kr.pe.jonghak.demo.hello.api.service.AwsomeService;
 import lombok.extern.slf4j.Slf4j;
-
-import java.util.Arrays;
-import java.util.stream.Stream;
-
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 
 @RestController
